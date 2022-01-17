@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* Sempre que colocar um "id" no html  , no css se usa "#"
+   Sempre que colocar um "class" no html , no css se usa "."
+*/
+
+body{
+    background-color:rgb(187, 214, 205);
+    font-family:Arial, Helvetica,  sans-serif;
+}
+
+h1{
+    color: rgb(126, 22, 129);
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(126, 22, 129);
+
+    color: white;
+}
+
+
+
+h2{
+    color: rgb(108, 16, 201);
+}
+
+.basico {
+color:green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+.destaque {
+    background-color:rgba(208, 255, 0, 0.918);
+}
