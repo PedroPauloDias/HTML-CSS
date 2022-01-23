@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+caption{
+    font-size:1.5em; 
+    font-weight:bold;
+    padding: 10px;
+    background-color: lightgray;
+}
+thead, tfoot {
+    background-color: gray;
+    color: white;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+/*para colocar o efeito zebrado, pode se usar "odd"= impar ou "even"= par  */
+tbody >tr:nth-child(2n) { 
+    background-color:lightgray;
+
+}
+/*para colocar o cabeçalho da minha tabela de forma fixa durante a rolagem , importante lembrar q o posicionamento da tabela tem q estar relativo " position: relative;*/
+thead > tr > th {
+    position:sticky;
+    top: -1px;
+    background-color: gray;
+    color: white;
+}
+table {
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;
+
+}
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+   
+}
+td.numeros {
+    text-align: right
+}
+
+
+
+
+    </style>
+        
+</head>
+<body>
+
+    <h1>Uso de tabelas grandes</h1>
+    
+<!--Anatomia para tabelas grandes
+
+TABLE   
+    CAPTION = Legenda da minha Tabela
+    THEAD
+        tr, td , th
+    TBODY
+        tr, td , th
+    TFOOT 
+        tr, td , th    
+-->
+<table>
+    <caption>
+        População das unidades Federativas
+    </caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th  scope="col" style="width: 100px" >População</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numeros">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numeros">17 463 349</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numeros">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numeros">17 463 349</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>São Paulo</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="numeros">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="numeros">17 463 349</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Pará</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="numeros">45 919 049</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot> 
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="numeros">000 000</td>
+        </tr>       
+    </tfoot>
+
+</table>
+
+</body>
+</html>
